@@ -7,7 +7,7 @@ Shortkeys:
 - Alt + R - resume loiter around the last point.
 
 After point is added to the tracking list, that point will be marked on the map exactly there where gimbal was looking to:
-![ROI points on map](media/roi-points-on-map.png)
+![ROI points on map](../media/roi-points-on-map.png)
 
 Also you can see the list choosing the "ROI list" from the context menu and add notes to each point.
-![ROI list menu item](media/menu-roi-list.png)
+![ROI list menu item](../media/menu-roi-list.png)
