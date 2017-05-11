@@ -6,10 +6,10 @@ Just copy paste according plugin dll files to your Mission Planner's Plugins fol
 
 ## Plugins
 ### RollPitchGimbal
-Mission Planner calculates correctly where gimbal is looking at (lat/lng) only if gimbal uses both YAW and PITCH control. But if gimbal uses only ROLL and PITCH control then Mission Planner doesn't provide correct latitude and longitude. This plugin fixes that.
+Mission Planner calculates correctly where gimbal is looking at (lat/lng) only if gimbal uses both YAW and PITCH control. But if gimbal uses only ROLL and PITCH control then Mission Planner doesn't provide correct latitude and longitude. This plugin fixes that. [More about this plugin](MissionPlanner.Plugins.RollPitchGimbal/README.md)
 
 ### RoiTracking
-This plugin presents a possibility to track interesting points where gimbal is looking to.
+This plugin presents a possibility to track interesting points where gimbal is looking to. [More about this plugin](MissionPlanner.Plugins.RoiTracking/README.md)
 
 Shortkeys:
 - Alt + L - add the point where gimbal is looking to, to the tracking list and start loiter around it.
