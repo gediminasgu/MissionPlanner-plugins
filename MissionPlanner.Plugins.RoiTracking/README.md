@@ -11,3 +11,6 @@ After point is added to the tracking list, that point will be marked on the map 
 
 Also you can see the list choosing the "ROI list" from the context menu and add notes to each point.
 ![ROI list menu item](../media/menu-roi-list.png)
+
+In points list you can set point notes or icon, save points to the file or open previously saved file.
+![ROI list](../media/roi-points.png)
