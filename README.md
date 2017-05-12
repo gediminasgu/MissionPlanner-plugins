@@ -10,10 +10,3 @@ Mission Planner calculates correctly where gimbal is looking at (lat/lng) only i
 
 ### RoiTracking
 This plugin presents a possibility to track interesting points where gimbal is looking to. [More about this plugin](MissionPlanner.Plugins.RoiTracking/README.md)
-
-Shortkeys:
-- Alt + L - add the point where gimbal is looking to, to the tracking list and start loiter around it.
-- Alt + T - just add the the point where gimbal is looking to, to the tracking list.
-- Alt + R - resume loiter around the last point.
-
-Also you can see the list choosing the "ROI list" from the context menu.
