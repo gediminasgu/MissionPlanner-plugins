@@ -1,0 +1,8 @@
+language: csharp
+solution: MissionPlannerPlugins.sln
+install:
+  - nuget restore MissionPlannerPlugins.sln
+  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release MissionPlannerPlugins.sln
+  - testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe ./MissionPlanner.Plugins.RollPitchGimbal.Tests/bin/Release/MissionPlanner.Plugins.RollPitchGimbal.Tests.dll
