@@ -12,3 +12,9 @@ assembly_info:
 
 platform: Any CPU
 configuration: Release
+
+after_build:
+  - cmd: release.bat
+
+artifacts:
+  - path: 'build\*'
