@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,36 +30,37 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoUtility, Version=3.1.7.5, Culture=neutral, PublicKeyToken=38326cb7e06851fc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\MissionPlanner\bin\Debug\GeoUtility.dll</HintPath>
+      <HintPath>..\lib\1.3.48\GeoUtility.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.Core">
-      <HintPath>..\..\MissionPlanner\bin\Debug\GMap.NET.Core.dll</HintPath>
+      <HintPath>..\lib\1.3.48\GMap.NET.Core.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.WindowsForms">
-      <HintPath>..\..\MissionPlanner\bin\Debug\GMap.NET.WindowsForms.dll</HintPath>
+      <HintPath>..\lib\1.3.48\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
     <Reference Include="MAVLink">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MAVLink.dll</HintPath>
+      <HintPath>..\lib\1.3.48\MAVLink.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.exe</HintPath>
+      <HintPath>..\lib\1.3.48\MissionPlanner.exe</HintPath>
     </Reference>
     <Reference Include="MissionPlanner.Comms">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.Comms.dll</HintPath>
+      <HintPath>..\lib\1.3.48\MissionPlanner.Comms.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner.Controls">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.Controls.dll</HintPath>
+      <HintPath>..\lib\1.3.48\MissionPlanner.Controls.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner.Utilities">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.Utilities.dll</HintPath>
+      <HintPath>..\lib\1.3.48\MissionPlanner.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\MissionPlanner\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\lib\1.3.48\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

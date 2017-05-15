@@ -21,7 +21,7 @@
             var pitchDistance = this.GetDistanceByAltitudeAndAngle(altitude, cameraPitch);
             var rollDistance = this.GetDistanceByAltitudeAndAngle(altitude, -cameraRoll);
 
-            var headingRad = heading * MathHelper.deg2rad;
+            var headingRad = heading * DegreesToRadians;
             
             // formula taken from http://keisan.casio.com/exec/system/1223522781
             var pitchRotatedByHeading = (-rollDistance * Math.Sin(headingRad)) + (pitchDistance * Math.Cos(headingRad));
@@ -35,7 +35,7 @@
 
         private double GetDistanceByAltitudeAndAngle(float altitude, float angle)
         {
-            return Math.Sin(angle * MathHelper.deg2rad) / Math.Cos(angle * MathHelper.deg2rad) * altitude;
+            return Math.Sin(angle * DegreesToRadians) / Math.Cos(angle * DegreesToRadians) * altitude;
         }
 
         /// <summary>

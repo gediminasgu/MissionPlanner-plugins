@@ -86,7 +86,7 @@
         private void TrackPoint(PointLatLngAlt gimbalPoint)
         {
             var screenshotPath = DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".jpg";
-            var result = Capturer.ScreenCapture.Capture("gst-launch-1.0", screenshotPath);
+            var result = false; //Capturer.ScreenCapture.Capture("gst-launch-1.0", screenshotPath);
 
             var point = new PointLatLngAlt(gimbalPoint);
             var p = new RoiPoint(point, this.roiPoints.Count + 1) { ScreenshotPath = result ? screenshotPath : null };
