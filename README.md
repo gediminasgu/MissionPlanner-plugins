@@ -1,6 +1,9 @@
 # MissionPlanner-plugins
 Collection of different plugins for Mission Planner.
 
+Tested MP versions:
+- 1.3.48
+
 ## How to install?
 Just copy paste according plugin dll files to your Mission Planner's Plugins folder.
 
