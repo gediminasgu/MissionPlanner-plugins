@@ -1,6 +1,8 @@
 # MissionPlanner-plugins
 Collection of different plugins for Mission Planner.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ynfyolp87i0cipt5?svg=true)](https://ci.appveyor.com/project/gediminasgu/missionplanner-plugins)
+
 Tested MP versions:
 - 1.3.48
 
