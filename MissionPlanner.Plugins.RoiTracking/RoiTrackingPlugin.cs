@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Forms;
 
@@ -55,6 +56,12 @@
 
         private void InstanceOnKeyDown(object sender, KeyEventArgs keyEventArgs)
         {
+            /*if (keyEventArgs.Alt && keyEventArgs.KeyCode == Keys.T)
+            {
+                this.TrackPoint(new PointLatLngAlt(54.12, 24.13));
+                keyEventArgs.Handled = true;
+            }*/
+
             if (!MainV2.comPort.BaseStream.IsOpen)
                 return;
 
@@ -85,14 +92,21 @@
 
         private void TrackPoint(PointLatLngAlt gimbalPoint)
         {
-            var screenshotPath = DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".jpg";
-            var result = false; //Capturer.ScreenCapture.Capture("gst-launch-1.0", screenshotPath);
+            ThreadPool.QueueUserWorkItem(
+                o =>
+                    {
+                        var screenshotPath = DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".jpg";
+                        var result = Capturer.ScreenCapture.Capture("gst-launch-1.0", screenshotPath);
 
-            var point = new PointLatLngAlt(gimbalPoint);
-            var p = new RoiPoint(point, this.roiPoints.Count + 1) { ScreenshotPath = result ? screenshotPath : null };
+                        var point = new PointLatLngAlt(gimbalPoint);
+                        var p = new RoiPoint(point, this.roiPoints.Count + 1)
+                                    {
+                                        ScreenshotPath = result ? screenshotPath : null
+                                    };
 
-            this.roiPoints.Add(p);
-            this.AddMarker(p);
+                        this.roiPoints.Add(p);
+                        this.AddMarker(p);
+                    });
         }
 
         private void AddMarker(RoiPoint point)
